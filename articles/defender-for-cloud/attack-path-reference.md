@@ -59,6 +59,15 @@ Prerequisite: [Enable agentless scanning](enable-vulnerability-assessment-agentl
 | EC2 instance has high severity vulnerabilities and has insecure plaintext secret that is used to authenticate to a RDS resource | An AWS EC2 instance has high severity vulnerabilities and has plaintext SSH private key that can authenticate to an AWS RDS resource |
 | Internet exposed AWS EC2 instance has high severity vulnerabilities and has insecure secret that has permission to S3 bucket via an IAM policy, or via a bucket policy, or via both an IAM policy and a bucket policy. | An AWS EC2 instance is reachable from the internet, has high severity vulnerabilities and has insecure secret that has permissions to S3 bucket via an IAM policy, a bucket policy or both |
 
+### GCP VM instances
+Prerequisite: [Enable agentless scanning](enable-vulnerability-assessment-agentless.md).
+
+| Attack path display name | Attack path description |
+|--|--|
+| Internet exposed GCP VM instance has high severity vulnerabilities and high permission to an account | An GCP VM instance is reachable from the internet, has high severity vulnerabilities and has permission to an account. |
+
+
+
 ### Azure data
 
 | Attack path display name | Attack path description |
@@ -93,6 +102,7 @@ Prerequisite: [Enable agentless scanning](enable-vulnerability-assessment-agentl
 | Private AWS S3 bucket replicates data to internet exposed and publicly accessible AWS S3 bucket | Private AWS S3 bucket is replicating data to internet exposed and publicly accessible AWS S3 bucket |
 | Private AWS S3 bucket with sensitive data replicates data to internet exposed and publicly accessible AWS S3 bucket | Private AWS S3 bucket with sensitive data is replicating data to internet exposed and publicly accessible AWS S3 bucket|
 | RDS snapshot is publicly available to all AWS accounts (Preview) | RDS snapshot is publicly available to all AWS accounts |
+
 
 ### Azure containers
 
